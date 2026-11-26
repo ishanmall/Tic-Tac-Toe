@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VICE TAC TOE // NEON EDITION</title>
+  <link rel="stylesheet" href="style.css?v=5" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+  <div class="app">
+    <div class="header">
+      <div class="title">VICE TAC TOE</div>
+      <div class="status" id="statusText">YOUR TURN (X)</div>
+    </div>
+
+    <div class="mode-bar">
+      <button class="mode-btn active" id="btnAi">VS AI</button>
+      <button class="mode-btn" id="btnLocal">LOCAL 2P</button>
+    </div>
+
+    <div class="scoreboard">
+      <div class="score-card">
+        <div class="score-label" id="labelX">YOU (X)</div>
+        <div class="score-value score-x" id="scoreX">0</div>
+      </div>
+      <div class="score-card">
+        <div class="score-label">DRAWS</div>
+        <div class="score-value score-d" id="scoreD">0</div>
+      </div>
+      <div class="score-card">
+        <div class="score-label" id="labelO">AI (O)</div>
+        <div class="score-value score-o" id="scoreO">0</div>
+      </div>
+    </div>
+
+    <div class="board-wrap">
+      <canvas id="gameCanvas" width="420" height="420"></canvas>
+    </div>
+
+    <div class="controls">
+      <button class="action-btn" id="btnRestart">RESTART MATCH</button>
+      <button class="action-btn secondary" id="btnSound">SFX: ON</button>
+    </div>
+  </div>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>
